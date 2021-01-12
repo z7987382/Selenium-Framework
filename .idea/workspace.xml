@@ -4,17 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/pageobjects/baidu_homepage.py" line="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fad45aea-b02e-4e00-babe-0efd31e61174" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testsuites/HTMLTestRunnerCN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/HTMLTestRunnerEN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/test_HTMLTestRunnerCN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/test_HTMLTestRunnerEN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Selenium-Framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Selenium-Framework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fad45aea-b02e-4e00-babe-0efd31e61174" name="Default Changelist" comment="测试commit">
+      <change afterPath="$PROJECT_DIR$/tools/chromedriver" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/framework/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/baidu_homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/baidu_homepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testsuites/TestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/testsuites/TestRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/browser_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/framework/browser_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsuites/test_baidu_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/testsuites/test_baidu_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsuites/test_get_page_title.py" beforeDir="false" afterPath="$PROJECT_DIR$/testsuites/test_get_page_title.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tools/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/testsuites" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -98,8 +96,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/testsuites" />
       <recent name="$PROJECT_DIR$/tools" />
+      <recent name="$PROJECT_DIR$/testsuites" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/testsuites" />
@@ -151,8 +149,17 @@
       <workItem from="1610345024929" duration="975000" />
       <workItem from="1610347714124" duration="2475000" />
       <workItem from="1610360564854" duration="612000" />
-      <workItem from="1610429971850" duration="813000" />
+      <workItem from="1610429971850" duration="1394000" />
+      <workItem from="1610445185882" duration="1419000" />
     </task>
+    <task id="LOCAL-00001" summary="测试commit">
+      <created>1610431160627</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610431160627</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -212,8 +219,12 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="测试commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Selenium_Framework$TestRunner.coverage" NAME="TestRunner Coverage Results" MODIFIED="1610430891782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testsuites" />
+    <SUITE FILE_PATH="coverage/Selenium_Framework$TestRunner.coverage" NAME="TestRunner Coverage Results" MODIFIED="1610447202974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testsuites" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/framework/browser_engine.py">

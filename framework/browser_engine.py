@@ -10,7 +10,7 @@ logger = Logger(logger="BrowserEngine").getlog()
 
 class BrowserEngine(object):
     dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
-    chrome_driver_path = dir + '/tools/chromedriver.exe'
+    chrome_driver_path = dir + '/tools/chromedriver'
     ie_driver_path = dir + '/tools/IEDriverServer.exe'
 
     def __init__(self, driver):

@@ -1,4 +1,6 @@
+#! /usr/bin/env python
 # coding = utf-8
+
 import unittest
 
 from framework.browser_engine import BrowserEngine

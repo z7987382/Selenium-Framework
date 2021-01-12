@@ -73,7 +73,8 @@ class BasePage(object):
         """
         try:
             element = self.driver.find_element(*selector)
-            logger.info("The element looked up is %s "% (selector))
+            print(type(element))
+            logger.info("The element looked up is %s "% str(selector))
             return element
         except NoSuchElementException as e:
             logger.error("NoSuchElementException: %s" % e)
