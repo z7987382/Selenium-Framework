@@ -35,11 +35,7 @@ class BaiduSearch(unittest.TestCase):
         homepage.send_submit_btn()  # 调用页面对象类中的点击搜索按钮方法
         time.sleep(2)
         homepage.get_windows_img()  # 调用基类截图方法
-        try:
-            assert 'selenium' in self.driver.title()  # 调用页面对象继承基类中的获取页面标题方法
-            print('Test Pass.')
-        except Exception as e:
-            print('Test Fail.', format(e))
+        assert 'selenium1' in self.driver.title
 
     def test_search2(self):
         homepage = HomePage(self.driver)
