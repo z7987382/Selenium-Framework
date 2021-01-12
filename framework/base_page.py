@@ -120,7 +120,7 @@ class BasePage(object):
 
         # 输入
 
-    def type(self, *selector, text):
+    def type(self, text, *selector):
 
         el = self.find_element(*selector)
         el.clear()
