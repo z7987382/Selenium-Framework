@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fad45aea-b02e-4e00-babe-0efd31e61174" name="Default Changelist" comment="debug">
+      <change afterPath="$PROJECT_DIR$/pageobjects/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testsuites/test_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/localstorage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/myconfigparser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testsuites/test_baidu_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/testsuites/test_baidu_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/framework/base_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -98,7 +111,7 @@
       <recent name="$PROJECT_DIR$/testsuites" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests in test_login.py">
     <configuration name="TestRunner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Selenium-Framework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,8 +134,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for test_login.Login.test_login" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Framework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testsuites" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login.Login.test_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_login.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Framework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testsuites" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testsuites/test_login.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_login.py" />
+        <item itemvalue="Python tests.Unittests for test_login.Login.test_login" />
         <item itemvalue="Python.TestRunner" />
       </list>
     </recent_temporary>
@@ -145,7 +190,10 @@
       <workItem from="1610347714124" duration="2475000" />
       <workItem from="1610360564854" duration="612000" />
       <workItem from="1610429971850" duration="1394000" />
-      <workItem from="1610445185882" duration="2449000" />
+      <workItem from="1610445185882" duration="5648000" />
+      <workItem from="1610594256288" duration="201000" />
+      <workItem from="1610601328631" duration="3238000" />
+      <workItem from="1610675377010" duration="2642000" />
     </task>
     <task id="LOCAL-00001" summary="测试commit">
       <created>1610431160627</created>
@@ -161,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610447281008</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="debug">
+      <created>1610448483189</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610448483189</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -227,7 +282,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="debug" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Selenium_Framework$TestRunner.coverage" NAME="TestRunner Coverage Results" MODIFIED="1610448234907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testsuites" />
+    <SUITE FILE_PATH="coverage/Selenium_Framework$TestRunner.coverage" NAME="TestRunner Coverage Results" MODIFIED="1610448392631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testsuites" />
+    <SUITE FILE_PATH="coverage/Selenium_Framework$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1610678212422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testsuites" />
+    <SUITE FILE_PATH="coverage/Selenium_Framework$Unittests_for_test_login_Login_test_login.coverage" NAME="Unittests for test_login.Login.test_login Coverage Results" MODIFIED="1610603695223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testsuites" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/framework/browser_engine.py">

@@ -3,7 +3,7 @@ import time
 import os.path
 from framework.logger import Logger
 from selenium.common.exceptions import NoSuchElementException
-
+from tools.localstorage import LocalStorage
 
 # create a logger instance
 logger = Logger(logger="BasePage").getlog()
@@ -160,6 +160,21 @@ class BasePage(object):
     def get_page_title(self):
         logger.info("Current page title is %s" % self.driver.title)
         return self.driver.title
+
+    def add_cookie(self, cookies):
+        logger.info("Add cookies %s" % str(cookies))
+        for i, j in cookies:
+            cookie = {"name": str(i), "value": str(j)}
+            self.driver.add_cookie(cookie)
+
+    def add_localstorage(self, items):
+        logger.info("add localstorage:%s" % items)
+        localstorage = LocalStorage(self.driver)
+        for i in items:
+            localstorage.set(i[0], i[1])
+
+    def refresh(self):
+        self.driver.refresh()
 
     @staticmethod
     def sleep(seconds):

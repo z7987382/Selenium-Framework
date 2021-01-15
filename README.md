@@ -25,3 +25,5 @@
 
 - **[tools](https://github.com/StrawberryFlavor/Selenium-Framework/tree/master/tools)**：用于存放浏览器的 selenium 驱动
 
+pageobjects用于封装具体的某个页面（包括页面中的所有操作）
+testsuites中实例化这些页面并调用操作
