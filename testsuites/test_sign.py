@@ -6,6 +6,9 @@ import unittest
 from framework.browser_engine import BrowserEngine
 from pageobjects.baidu_homepage import *
 from pageobjects.login_page import *
+from pageobjects.upload_file_page import *
+from pageobjects.fill_contractor_page import *
+from pageobjects.drag_seal_page import *
 
 
 class Login(unittest.TestCase):
@@ -25,13 +28,33 @@ class Login(unittest.TestCase):
         :return:
         """
         # cls.driver.quit()
-        pass
 
 
-    def test_login(self):
+    def test_A_login(self):
         loginpage = LoginPage(self.driver)
         loginpage.enter_the_page()
         loginpage.login()
+
+
+    def test_B_upload_file(self):
+        uploadpage = UploadPage(self.driver)
+        uploadpage.enter_the_page()
+        uploadpage.upload_file()
+        uploadpage.next_page()
+
+    def test_C_fill_contractor(self):
+        fillpage = FillPage(self.driver)
+        fillpage.next_page()
+
+    def test_D_Drag_Seal(self):
+        dragsealpage = DragSealPage(self.driver)
+        dragsealpage.choose_seal()
+        dragsealpage.drag_seal()
+        dragsealpage.next_page()
+        dragsealpage.refill_number()
+
+
+
 
 
 if __name__ == '__main__':

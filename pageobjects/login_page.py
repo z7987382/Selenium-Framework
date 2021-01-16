@@ -7,15 +7,6 @@ from selenium.webdriver.common.by import By
 logger = Logger("LoginDebug").getlog()
 
 class LoginPage(BasePage):
-    def type_search(self, text):
-        self.type(text, *self.input_box)
-
-    def send_submit_btn(self):
-        self.click(*self.search_submit_btn)
-
-    def click_news(self):
-        self.click(*self.news_link)
-        self.sleep(2)
 
     def login(self):
         # 读取配置文件
@@ -31,7 +22,7 @@ class LoginPage(BasePage):
 
 
     def enter_the_page(self):
-        url = "https://letsign-boe.bytedance.net/"
+        url = "https://letsign-boe.bytedance.net/v2/saas/login"
         self.driver.get(url)
         logger.info("enter the page:%s" % url)
 
