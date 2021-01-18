@@ -11,8 +11,8 @@ import pyautogui
 logger = Logger("DragSealDebug").getlog()
 
 class DragSealPage(BasePage):
-    btn = "#root > section > section > main > div > div.container___1M8Ic > div > div.sider___2Sysy > div > div.parties___3u3bP > div > span > div"
-    btn_box = (By.CSS_SELECTOR, btn)
+    btn = "//*[@id=\"root\"]/section/section/main/div/div[2]/div/div[1]/div/div[2]/div/span/div"
+    btn_box = (By.XPATH, btn)
 
     btnnext = "#root > section > section > main > div > div.footer___3wMUj > div > div > button.byted-btn.byted-btn-size-md.byted-btn-type-primary.byted-btn-shape-angle.byted-can-input-grouped"
     btnnext_box = (By.CSS_SELECTOR, btnnext)
@@ -25,8 +25,8 @@ class DragSealPage(BasePage):
 
     def refill_number(self):
         self.type("999999", *self.refill_box)
-        self.sleep(1)
         self.click(*self.apply_box)
+        self.sleep(10)
 
 
     def next_page(self):
@@ -35,12 +35,12 @@ class DragSealPage(BasePage):
 
     def choose_seal(self):
         self.click(*self.btn_box)
-        self.sleep(2)
+        self.sleep(5)
 
     def drag_seal(self):
         logger.info("starting drag and drop")
-        pyautogui.mouseDown(x=80, y=600)
-        pyautogui.moveTo(x=400, y=600)
+        pyautogui.mouseDown(x=80, y=570)
+        pyautogui.moveTo(x=700, y=550, duration=3)
         pyautogui.mouseUp()
         logger.info("ended drag and drop")
 

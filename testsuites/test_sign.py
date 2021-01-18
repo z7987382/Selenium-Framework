@@ -9,6 +9,7 @@ from pageobjects.login_page import *
 from pageobjects.upload_file_page import *
 from pageobjects.fill_contractor_page import *
 from pageobjects.drag_seal_page import *
+from pageobjects.sign_page import *
 
 
 class Login(unittest.TestCase):
@@ -27,7 +28,8 @@ class Login(unittest.TestCase):
         测试结束后的操作，这里基本上都是关闭浏览器
         :return:
         """
-        # cls.driver.quit()
+        time.sleep(10)
+        cls.driver.quit()
 
 
     def test_A_login(self):
@@ -52,6 +54,14 @@ class Login(unittest.TestCase):
         dragsealpage.drag_seal()
         dragsealpage.next_page()
         dragsealpage.refill_number()
+        time.sleep(5)
+
+    def test_E_sign(self):
+        signpage = SignPage(self.driver)
+        signpage.choose_seal()
+        signpage.next_page()
+        signpage.refill_number()
+
 
 
 

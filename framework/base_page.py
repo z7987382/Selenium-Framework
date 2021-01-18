@@ -151,7 +151,7 @@ class BasePage(object):
         el = self.find_element(*selector)
         try:
             self.driver.execute_script("arguments[0].click();", el)
-            logger.info("The element \' %s \' was clicked." % el.text)
+            # logger.info("The element \' %s \' was clicked." % el.text)
         except NameError as e:
             logger.error("Failed to click the element with %s" % e)
 
@@ -179,6 +179,7 @@ class BasePage(object):
     def upload(self, text, *selector):
         el = self.find_element(*selector)
         try:
+            # el.clear()
             el.send_keys(text)
             logger.info("Had upload \' %s \' in inputBox" % text)
         except NameError as e:

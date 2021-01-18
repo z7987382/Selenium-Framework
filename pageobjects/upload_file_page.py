@@ -15,15 +15,17 @@ class UploadPage(BasePage):
     def upload_file(self):
         file = "/Users/bytedance/Documents/pdf/A3-房屋租赁合同文本.pdf".decode("utf-8")
         self.upload(file, *self.input_box)
+        self.sleep(3)
 
     def enter_the_page(self):
         url = "https://letsign-boe.bytedance.net/v2/saas/start-sign/upload"
         self.driver.get(url)
         logger.info("enter the page:%s" % url)
+        self.sleep(3)
 
     def next_page(self):
         self.click(*self.btn_box)
-        self.sleep(4)
+        self.sleep(3)
 
 
 

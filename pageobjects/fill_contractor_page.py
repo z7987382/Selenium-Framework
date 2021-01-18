@@ -10,8 +10,8 @@ from selenium.webdriver.common.by import By
 logger = Logger("UploadDebug").getlog()
 
 class FillPage(BasePage):
-    btn = "#root > section > section > main > div > div.footer___3wMUj > div > div > button.byted-btn.byted-btn-size-md.byted-btn-type-primary.byted-btn-shape-angle.byted-can-input-grouped"
-    btn_box = (By.CSS_SELECTOR, btn)
+    btn = "//*[@id=\"root\"]/section/section/main/div/div[3]/div/div/button[2]"
+    btn_box = (By.XPATH, btn)
 
     def next_page(self):
         self.click(*self.btn_box)
